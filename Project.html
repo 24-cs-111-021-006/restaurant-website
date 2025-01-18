@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epicurean Delight</title>
+    <link rel="shortcut icon" href="logo3.png" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            transition: background-image 1s ease-in-out;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: white;
+            font-size: x-large;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+
+        .intro {
+            margin-top: 220px;
+            color: #b8a8a4;
+        }
+
+        .intro #line1 {
+            font-size: 33px;
+            font-weight: bold;
+        }
+
+        .intro #line2 {
+            font-size: 64px;
+            font-weight: bolder;
+            margin: 40px 0 20px;
+        }
+
+        .intro #line3 {
+            font-size: 23px;
+            font-style: italic;
+            color: white;
+            margin-bottom: 50px; 
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .text-content {
+            max-width: 650px;
+            color: #fff;
+            text-align: left;
+            margin-left: -20px; 
+        }
+
+        .text-content h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .text-content p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .image-content img {
+            width: 500px; 
+            height: auto;
+            animation: rotate360 15s linear infinite; 
+        }
+
+        @keyframes rotate360 {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 1s, opacity 0.2s;
+        }
+
+        .modal.active {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 400px;
+            width: 80%;
+        }
+
+        .modal-content h2 {
+            margin: 0 0 20px;
+        }
+
+        .modal-content p {
+            margin: 0 0 20px;
+        }
+
+        .modal-content button {
+            background-color: #222;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="Project.html">𝐻𝑜𝓂𝑒</a>
+        <a href="ABOUT.html">𝒜𝒷𝑜𝓊𝓉</a>
+        <a href="menu.html">𝑀𝑒𝓃𝓊</a>
+        <a href="contact.html">𝒞𝑜𝓃𝓉𝒶𝒸𝓉</a>
+        <a href="Location.html">𝐿𝑜𝒸𝒶𝓉𝒾𝑜𝓃</a>
+    </nav>
+    <div class="intro">
+        <div id="line1" style="color: wheat;">𝐄𝐥𝐞𝐯𝐚𝐭𝐞 𝐲𝐨𝐮𝐫 𝐝𝐢𝐧𝐢𝐧𝐠 𝐞𝐱𝐩𝐞𝐫𝐢𝐞𝐧𝐜𝐞 𝐚𝐭</div>
+        <div id="line2" style="color: wheat;">𝓔𝓟𝓘𝓒𝓤𝓡𝓔𝓐𝓝 𝓓𝓔𝓛𝓘𝓖𝓗𝓣</div>
+        <div id="line3" style="color: wheat;"><b>Our meal will leave you wanting more!</b></div>
+        <br><br>
+        <a href="menu.html" style="display: inline-block; padding: 12px 30px; font-size: 18px; font-weight: bold; color: white; background-color: #a0665f; border-radius: 5px; text-decoration: none; transition: all 0.3s ease;">View Our Menu</a>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    
+
+    <div class="content">
+        <div class="text-content">
+            <h1>Enjoy Our Special Meal: <br>Sizzling BBQ Delight</h1>
+            <p>
+                Indulge in the ultimate barbecue experience at our restaurant! 
+                This tantalizing grill platter features juicy steaks, smoky ribs, flavorful sausages, 
+                and vibrant vegetable skewers, all cooked to perfection over open flames. 
+                Garnished with fresh herbs and seasoned to enhance every bite, this spread promises 
+                to satisfy your cravings for smoky, char-grilled goodness. 
+                Perfect for sharing or savoring on your own!
+            </p>
+        </div>
+        <div class="image-content">
+            <img src="https://themewagon.github.io/restoran/img/hero.png" alt="Hero Image">
+        </div>
+    </div>
+
+    <footer style="background-color: #222; color: #fff; padding: 10px 20px; text-align: center;">
+        <div style="max-width: 1700px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between;">
+            <div style="flex: 1; margin: 10px;">
+                <h3 style="margin-bottom: 5px;">About Us</h3>
+                <p style="margin: 0; font-size: 14px;">Indulge in a culinary experience like no other at Epicurean Delight. Our menu, featuring dishes like juicy kebabs and aromatic rice pilaf, is crafted with passion and tradition, delivering the true essence of Turkish cuisine with every bite.</p>
+            </div>
+            <div style="flex: 1; margin: 10px;">
+                <h3 style="margin-bottom: 5px;">Contact Us</h3>
+                <p style="margin: 0; font-size: 14px;">Block J Street 12, Wah, Pakistan</p>
+                <p style="margin: 0; font-size: 14px;">Phone: <a href="tel:+923329927788" style="color: #fff; text-decoration: none;">+923329927788</a></p>
+                <p style="margin: 0; font-size: 14px;">Email: <a href="mailto:info@epicureandelight.com" style="color: #fff; text-decoration: none;">info@epicureandelight.com</a></p>
+            </div>
+            <div style="flex: 1; margin: 10px;">
+                <h3 style="margin-bottom: 5px;">Follow Us</h3>
+                <p style="margin: 0; font-size: 14px;">
+                    <a href="https://www.facebook.com/ahmedhabib.ahmedhabib.5" style="color: #fff; margin: 0 5px; text-decoration: none;">Facebook</a>
+                    <a href="https://www.instagram.com/ahmedwho___" style="color: #fff; margin: 0 5px; text-decoration: none;">Instagram</a>
+                    <a href="#" style="color: #fff; margin: 0 5px; text-decoration: none;">Twitter</a>
+                </p>
+            </div>
+            <div style="flex: 1; margin: 10px;">
+                <h3 style="margin-bottom: 5px;">Operating Hours</h3>
+                <p style="margin: 0; font-size: 14px;">Monday - Friday: 9:00 AM - 10:00 PM</p>
+                <p style="margin: 0; font-size: 14px;">Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+            </div>
+        </div>
+
+        <div style="margin-top: 10px; border-top: 1px solid #555; padding-top: 5px;">
+            <p style="margin: 5px 0; font-size: 12px;">&copy; 2024 Epicurean Delight. All Rights Reserved.</p>
+            <p style="margin: 5px 0; font-size: 12px;">Website by Team Summan, Zahra, and Ahmed</p>
+        </div>
+    </footer>
+
+    <div class="modal" id="promoModal">
+        <div class="modal-content">
+            <h2>Special Offer!</h2>
+            <p>Get 20% off your first order. Use code: SAZ-2K25</p>
+            <button onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script>
+       // Background image changer
+const backgrounds = [
+    'url(chicken.jpg)',
+    'url(https://png.pngtree.com/background/20230516/original/pngtree-steak-is-sitting-on-a-tray-with-salad-and-vegetables-picture-image_2604488.jpg)',  
+    'url(https://img.freepik.com/premium-photo/triple-chocolate-fudge-cake_208978-443.jpg)',
+    'url(https://e0.pxfuel.com/wallpapers/760/57/desktop-wallpaper-barbecue.jpg)' // Replace with your own image paths
+];
+
+let currentBackground = 1; // Start from the second image
+
+// Immediately set the first background image
+document.body.style.backgroundImage = backgrounds[0];
+
+function changeBackground() {
+    document.body.style.backgroundImage = backgrounds[currentBackground];
+    currentBackground = (currentBackground + 1) % backgrounds.length;
+}
+
+// Start the interval for changing backgrounds after 5 seconds
+setTimeout(() => {
+    setInterval(changeBackground, 5000); // Change every 5 seconds
+}, 4000); // Delay starting the interval by 4 seconds
+
+
+        // Modal for special offer
+        window.onload = function() {
+            const modal = document.getElementById('promoModal');
+            setTimeout(() => {
+                modal.classList.add('active');
+            }, 3000);
+        };
+
+        function closeModal() {
+            document.getElementById('promoModal').classList.remove('active');
+        }
+    </script>
+</body>
+</html>

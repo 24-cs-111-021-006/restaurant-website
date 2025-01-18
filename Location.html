@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head><link rel="shortcut icon" href="logo3.png" type="image/x-icon"></head>  
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://img.freepik.com/free-vector/black-dark-background-with-diagonal-line-stripes_1017-37482.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .header h1 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .header p {
+            font-size: 24px;
+        }
+
+        .welcome-text {
+            text-align: center;
+            margin: 20px auto;
+            font-size: 20px;
+            max-width: 800px;
+            padding: 20px;
+            
+            border-radius: 8px;
+        }
+
+        .location-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .location-card {
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .location-card:hover {
+            transform: scale(1.05);
+        }
+
+        .location-card h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .location-card p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        #map {
+            width: 100%;
+            height: 500px;
+            margin-top: 20px;
+        }
+
+        .footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .footer p {
+            font-size: 16px;
+        }
+
+        .footer .contact-info {
+            font-size: 14px;
+        }
+
+        .branch-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .testimonials {
+            text-align: center;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 8px;
+            max-width: 800px;
+        }
+
+        .testimonials h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .testimonial {
+            font-size: 18px;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-name {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div style=" text-align: center; margin-top: 20px; ">
+        <div style="display: inline; margin: 0 20px;">
+            <a href="Project.html" style="color: white;font-size: x-large;text-decoration: none;">𝐻𝑜𝓂𝑒</a> </div>
+  <div style="display: inline; margin: 0 20px;">
+    <a href="ABOUT.html" style="color: white;font-size:x-large;text-decoration: none;">𝒜𝒷𝑜𝓊𝓉 </a></div>
+  <div style="display: inline; margin: 0 20px;">
+    <a href="menu.html" style="color: white;font-size: x-large;text-decoration: none;"> 𝑀𝑒𝓃𝓊 </a></div>
+  <div style="display: inline; margin: 0 20px;">
+    <a href="contact.html" style="color: white;font-size: x-large;text-decoration: none;">𝒞𝑜𝓃𝓉𝒶𝒸𝓉</a></div>
+  <div style="display: inline; margin: 0 20px;">
+    <a href="Location.html" style="color: white;font-size: x-large;text-decoration: none;">𝐿𝑜𝒸𝒶𝓉𝒾𝑜𝓃</a></div>
+</div><br>
+    <div class="header">
+        <h1>Your Culinary Destination</h1>
+        <p>Visit our branches for an unforgettable dining experience!</p>
+    </div>
+
+    <div class="welcome-text">
+        <p>At Epicurean Delight, we serve more than just food—we offer an experience. From our delectable dishes to our cozy ambiance, every meal is a celebration. Explore our locations, where exceptional service and unforgettable flavors await you. Whether you're in the heart of the city or enjoying a suburban escape, we have the perfect spot for your next meal!</p>
+    </div>
+	<div class="location-container">
+        <div class="location-card">
+            <h3><b><i>Main Branch</i></b></h3>
+            <img src="https://www.alkoncelik.com/uploads/celik-kafe-restorant-binalari-1.jpg" alt="Branch 1 Image" class="branch-image">
+            <p>Block J Street 12,Wah, Pakistan</p>
+            <p>Open: 12:00 PM - 1:00 AM</p>
+            <p>Enjoy the hustle and bustle of downtown while savoring the finest flavors.</p>
+        </div>
+
+        <div class="location-card">
+            <h3><b><i>Branch II</i></b></h3>
+            <img src="https://cdn.prod.website-files.com/5b83716c2b7a39b939b505a7/5e967127545466d9e1844451_5e4a06c9585b23bb723ac4bc_5ddb4d25d31f0f5cd06aca58_Epicurean%20-%20Compressed%20-%2021.jpg" alt="Branch 2 Image" class="branch-image">
+            <p>Gol Market street 08, Sialkot, Pakistan</p>
+            <p>Open: 12:00 PM - 10:00 PM</p>
+            <p>Our uptown location is perfect for a casual dining experience with friends and family.</p>
+        </div>
+
+        <div class="location-card">
+            <h3><b><i>Branch III</i></b></h3>
+            <img src="https://www.elysium-hotel.com/media/mxqhts35/epicurean_restaurant_terrace_f.webp" alt="Branch 3 Image" class="branch-image">
+            <p> new mirpur city, Kashmir, Pakistan</p>
+            <p>Open: 12:00 PM - 11:00 PM</p>
+            <p>Escape to a peaceful suburban setting with a relaxing dining atmosphere.</p>
+        </div>
+    </div>
+
+    <div class="testimonials">
+        <h2>What Our Guests Are Saying</h2>
+        <p class="testimonial">"The best dining experience I've had in years! Epicurean Delight never disappoints." - <span class="testimonial-name">Sarah L.</span></p>
+        <p class="testimonial">"A cozy atmosphere and mouth-watering dishes. Highly recommend!" - <span class="testimonial-name">Sana ullah.</span></p>
+        <p class="testimonial">"Perfect for family dinners or a night out. Great food and service!" - <span class="testimonial-name">Asad.</span></p>
+    </div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1504900.0867725029!2d-79.0921321988554!3d42.5498146489232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x882b350e38f30029%3A0xddf7c32c7703346a!2sUnion%20Station%20Toronto%2C%20Front%20Street%20West%2C%20Toronto%2C%20ON%2C%20Canada!3m2!1d43.645319699999995!2d-79.3804062!4m5!1s0x89c53ad5bf7ad649%3A0xa4ad77d8d48ebb13!2sepicurean%20delight!3m2!1d41.4641534!2d-75.88810339999999!5e0!3m2!1sen!2s!4v1735200971071!5m2!1sen!2s" width="1580" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <div class="footer">
+        <p>© 2024 Epicurean Delight. All Rights Reserved.</p>
+        <div class="contact-info">
+            <p>For inquiries, contact us at: info@epicureandelight.com</p>
+            <p>Phone: 03329927788</p>
+        </div>
+    </div>
+
+</body>
+</html>
